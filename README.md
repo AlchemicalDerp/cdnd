@@ -15,6 +15,16 @@
 
 Pack source for unsup/packwiz-installer: `https://raw.githubusercontent.com/AlchemicalDerp/cdnd/main/pack.toml`
 
+## Run a server
+
+Download the server pack and run `start.sh` (or `start.bat`):
+
+```
+https://github.com/AlchemicalDerp/cdnd/releases/latest/download/cd-d-server.zip
+```
+
+It contains no mods — [unsup](https://git.sleeping.town/exa/unsup) installs the server-side mods and configs, and updates them every time the server starts.
+
 ## Mods (149)
 
 | Name | Side | Source |
