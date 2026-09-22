@@ -1,0 +1,13 @@
+name = "SablePanel"
+filename = "sablepanel-0.12.5.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "4fe1ecf09a0c9f3502f4cad14cf2ce2031254667"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8761992
+project-id = 1673366

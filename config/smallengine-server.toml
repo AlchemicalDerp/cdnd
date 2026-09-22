@@ -1,0 +1,27 @@
+#Small Engine
+[thrust_engine]
+	#Thrust produced at each throttle step, from 0 (idle) to 15 (full).
+	#Must contain exactly 16 entries. Same units as Aeronautics propeller thrust.
+	throttleThrust = [0.0, 1.6, 3.2, 4.8, 6.4, 8.0, 9.6, 11.2, 12.8, 14.4, 16.0, 17.6, 19.2, 20.8, 22.4, 24.0]
+	#Airflow (m/s) behind the propeller at full throttle.
+	#Drives the entity push and the air particles. Aeronautics propellers sit near 10.
+	# Default: 14.0
+	# Range: 0.0 ~ 1000.0
+	airflowAtFullThrottle = 14.0
+	#Burn ticks consumed per game tick at full throttle. 1 = same rate as a furnace.
+	# Default: 4
+	# Range: 1 ~ 64
+	fuelUsePerTickAtFullThrottle = 4
+	#How fast the engine reaches commanded throttle. 1.0 = instant, 0.05 = very lazy.
+	#This is what makes the propeller spin up and wind down instead of snapping.
+	# Default: 0.06
+	# Range: 0.005 ~ 1.0
+	spoolRate = 0.06
+	#Radius in blocks of the propeller disc, used for the airflow volume.
+	# Default: 1.4
+	# Range: 0.1 ~ 8.0
+	propellerRadius = 1.4
+	#Degrees per tick the propeller spins at full throttle. Cosmetic only.
+	# Default: 100.0
+	# Range: 0.0 ~ 720.0
+	maxVisualRpm = 100.0

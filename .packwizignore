@@ -1,0 +1,37 @@
+# Files packwiz should not list in the index (so players never download them)
+# Managed by Packwright — add your own lines below.
+README.md
+LICENSE
+.nojekyll
+.github/
+unsup.toml
+
+# Packwright: game/runtime files that must never ship to players
+saves/
+logs/
+crash-reports/
+screenshots/
+backups/
+debug/
+.cache/
+.fabric/
+.quilt/
+.mixin.out/
+.connector/
+downloads/
+journeymap/data/
+XaeroWorldMap/
+XaeroWaypoints/
+Distant_Horizons_server_data/
+replay_recordings/
+.replay_cache/
+local/ftbchunks/
+*.sqlite
+*.sqlite-shm
+*.sqlite-wal
+*.log
+*.log.gz
+usercache.json
+usernamecache.json
+command_history.txt
+realms_persistence.json

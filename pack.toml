@@ -1,0 +1,13 @@
+name = "CD&D"
+author = "TheSkyDude"
+version = "1.0.0"
+pack-format = "packwiz:1.1.0"
+
+[index]
+file = "index.toml"
+hash-format = "sha256"
+hash = "8e0fdb2af0b1c1e8ae6b2217ae26fc73a43e7bf8ca11e8f7f2403c6af7700583"
+
+[versions]
+minecraft = "1.21.1"
+neoforge = "21.1.251"

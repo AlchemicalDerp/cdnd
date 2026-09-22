@@ -1,0 +1,13 @@
+name = "qModeling"
+filename = "qmodeling-1.0.5.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "30ca57c33a13a2656d696202ce1505c0728dd2a0"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 7966962
+project-id = 1477453

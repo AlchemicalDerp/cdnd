@@ -1,0 +1,13 @@
+name = "Waystone Contraption Compat"
+filename = "waystonecontraptioncompat-1.0.0.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/nFsh988g/versions/8f6d9b0E/waystonecontraptioncompat-1.0.0.jar"
+hash-format = "sha512"
+hash = "4755943d8f95a666fe4edb4216abb08b6d65029c647a5625edc01d9e3cb9f1c778fc7ce8ca20863a7f06899eef095c71b45f482651a64b5ccf6b1a1b9c44d6de"
+
+[update]
+[update.modrinth]
+mod-id = "nFsh988g"
+version = "8f6d9b0E"

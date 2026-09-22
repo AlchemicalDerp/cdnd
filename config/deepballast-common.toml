@@ -1,0 +1,264 @@
+[loop]
+	#Proportional gain: output levels per block of depth error.
+	#
+	#At 0.5 the controller asks for full ballast when it is 30 blocks off target.
+	#Raising this makes the boat commit harder to a correction, and is almost
+	#always the wrong fix for bad behaviour - a loop that porpoises needs damping,
+	#not more enthusiasm.
+	# Default: 0.5
+	# Range: 0.0 ~ 20.0
+	kp = 0.5
+	#Damping gain: output levels per block-per-second of vertical speed.
+	#
+	#This is the term that makes the whole thing work. Ballast sets acceleration,
+	#so without it the valve is still commanding 'sink' at the moment the boat
+	#arrives. Simulated, on an 80-block dive:
+	#
+	#  Kd 0   overshoots 19 blocks and never settles, hunting forever
+	#  Kd 3   overshoots 9, settles in about a minute
+	#  Kd 8   overshoots 1.2, settles in 52s, one reversal   <- default
+	#
+	#If the boat hunts, add damping. If it feels sluggish, lower Kp before
+	#touching this.
+	# Default: 8.0
+	# Range: 0.0 ~ 200.0
+	kd = 8.0
+	#Integral gain. Zero by default, and that is deliberate.
+	#
+	#The valve commands a ballast RATE and the tank accumulates it, so the tank is
+	#already a physical integrator sitting in the actuator. When error and rate
+	#both reach zero the valve shuts and the tank stays where it landed - which is
+	#by definition the fill that makes the boat neutral under its current load.
+	#Take on cargo and it finds a new resting point on its own.
+	#
+	#Adding a software integrator on top of a mechanical one mostly buys wind-up.
+	#Only reach for it if the boat reliably settles offset from target.
+	# Default: 0.0
+	# Range: 0.0 ~ 5.0
+	ki = 0.0
+	#Depth error, in blocks, inside which the valves are left shut.
+	#Without one the boat chatters on station forever, never quite satisfied.
+	# Default: 1.0
+	# Range: 0.0 ~ 20.0
+	deadbandBlocks = 1.0
+	#Clamp on the accumulator, in block-seconds. Ignored while ki is 0.
+	# Default: 10.0
+	# Range: 0.0 ~ 1000.0
+	integralLimit = 10.0
+	#Depth error at which the derivative reaches full strength. 0 disables.
+	#
+	#The loop has two regimes and one gain set. On a step, D is the whole reason
+	#the boat stops instead of sailing past. Hovering, the error is nearly zero so
+	#the command is nearly kd * velocity and nothing else - pure velocity feedback
+	#around an integrating actuator with lag, which is an oscillator whose loop
+	#gain is kd. Measured hovering for two minutes against a disturbance:
+	#
+	#  no scaling           80 valve reversals, step overshoot  1.2
+	#  full at  6 blocks     14 valve reversals, step overshoot  2.2  <- default
+	#  full at 10 blocks      6 valve reversals, step overshoot  3.5
+	#  full at 20 blocks      4 valve reversals, step overshoot  6.2
+	#  Kd 1, no scaling       4 valve reversals, step overshoot 19.2
+	#
+	#The first step is nearly free. Past it, quiet costs overshoot - raise this if
+	#your boat still hunts on station and you can spare the blocks.
+	#
+	#Flat gain trades one regime for the other. Scaling separates them.
+	# Default: 6.0
+	# Range: 0.0 ~ 200.0
+	dScaleBlocks = 6.0
+	#Least the derivative may be scaled to, as a fraction of kd.
+	#Stops D vanishing entirely on station, where a little damping still helps.
+	# Default: 0.1
+	# Range: 0.0 ~ 1.0
+	dScaleFloor = 0.1
+
+[setpoint]
+	#Depth commanded by a full-strength (15) setpoint signal.
+	#The analog input maps 0-15 linearly onto 0 to this depth, so this doubles as
+	#a ceiling: no lever position can dial a depth beyond it.
+	# Default: 256
+	# Range: 1 ~ 4000
+	maxCommandDepth = 256
+	#Y treated as the surface, used ONLY as a fallback.
+	#Deep Seas normally supplies the true measured water column above the vessel,
+	#which is better; this is what gets used if that reading is unavailable.
+	# Default: 62
+	# Range: -2032 ~ 2031
+	seaLevel = 62
+	#Blocks past the hull rating the over-depth override permits.
+	#
+	#With the override off, the setpoint stops at the WARNING line, because past it
+	#the loop refuses flood and cannot descend further anyway - on a 55-block hull
+	#that is 41.25, not the 46.75 where the dump lives.
+	#
+	#With it on, the warning line moves to the hull rating itself and the dump line
+	#to hull + this. Real protection is given up; a backstop is not. Deep Seas
+	#cracks blocks in four gradual stages rather than instantly, which is the only
+	#reason this is a defensible thing to offer at all.
+	# Default: 10.0
+	# Range: 0.0 ~ 100.0
+	overrideMargin = 10.0
+
+[interlock]
+	#Fraction of the vessel's own crush depth at which flooding is refused.
+	#Blowing is still allowed, so the boat can always climb out.
+	# Default: 0.75
+	# Range: 0.1 ~ 1.0
+	warnFraction = 0.75
+	#Fraction at which a full blow is forced and latched.
+	#The latch does not auto-clear: a boat that got here has been somewhere its
+	#hull was failing, and handing control straight back to the loop that put it
+	#there is how you sink twice. Sneak right-click the controller to reset.
+	# Default: 0.85
+	# Range: 0.1 ~ 1.0
+	criticalFraction = 0.85
+	#Roughly how long the ballast takes to arrest a descent.
+	#
+	#The interlock judges where the boat WILL be after this long, not where it is.
+	#Checking present depth is useless here: simulated, a boat descending at 4 b/s
+	#with a ten-second tank swing sailed clean through a limit set at 95% of crush
+	#depth, because the valve had barely started moving by the time it arrived.
+	#With six seconds of lead it stopped 42 blocks short instead.
+	#
+	#Bigger boat or slower pump means a longer reaction time.
+	# Default: 6.0
+	# Range: 0.0 ~ 60.0
+	reactionSeconds = 6.0
+	#Fraction of crush depth a latched vessel stops dumping at, and holds.
+	#
+	#An emergency dump that runs until the boat breaches trades an implosion for a
+	#submarine fired out of the water with the crew aboard. Once back above this
+	#depth the dump becomes a hold, with the latch still set - the crew still have
+	#to acknowledge it, they just do not have to do it while ascending at speed.
+	# Default: 0.5
+	# Range: 0.05 ~ 0.95
+	safeFraction = 0.5
+	#Seconds of smoothing on the descent rate the interlock projects from.
+	#
+	#Without this the interlock reads a single tick of velocity as a trend and
+	#multiplies it by the whole reaction time. A submarine holding station at 45
+	#on a hull rated to 55 latched and surfaced itself because one tick of 0.21
+	#b/s projected to 46.76 against a critical line of 46.75. It was not sinking,
+	#it was breathing.
+	#
+	#Costs almost nothing on a real dive: ballast accelerates at around 0.13 b/s^2,
+	#so one second of filter lag under-reads a genuine descent by about a tenth of
+	#a block per second. Set 0 to disable and read raw velocity.
+	# Default: 1.0
+	# Range: 0.0 ~ 10.0
+	rateSmoothingSeconds = 1.0
+	#Share of crush depth the interlock's projection may look ahead. 0 disables.
+	#
+	#The lead can be measured rather than configured, and one poor braking episode
+	#can push a measured lead into tens of seconds. Multiplied by a velocity spike
+	#that projects a boat at depth 10 past a critical line at 46.75 and latches it.
+	#Half of crush depth is far more lead than any real descent needs.
+	# Default: 0.5
+	# Range: 0.0 ~ 2.0
+	maxProjectionFraction = 0.5
+
+[output]
+	#How command levels are written onto the wire.
+	#
+	#  false (default)  DEMAND. 0 is idle, 14 is full effort. What a clutch, an
+	#                   Adjustable Chain Gearshift, a lamp or a comparator wants.
+	#  true             TRANSMISSION. Writes the Analog Transmission's own inverse
+	#                   ladder, so no inverter is needed: 15 is idle/stop and 1 is
+	#                   full effort (224 rpm of a 256 rpm input).
+	#
+	#NOTHING ever emits 15 as a command in either mode. Fifteen is the
+	#transmission's stop code, and a controller that saturated to 15 under load was
+	#switching the ballast off at the exact moment it meant 'everything you have'.
+	#
+	#Hazard in TRANSMISSION mode: a transmission reading no signal sees level 0,
+	#which is full throughput, so a cut wire fails to full ballast rate rather than
+	#to stopped. Keep the run short.
+	transmissionMode = false
+	#Game ticks a published output is held before it may change again.
+	#
+	#The loop runs at 20 Hz because that is the physics timestep. Redstone runs at
+	#10 Hz, and a Create Redstone Link carries the signal's strength and duration
+	#faithfully at that same 10 Hz. Publishing faster than the transport makes the
+	#transport a SAMPLER: a value held for one game tick is either dropped or
+	#stretched into a full pulse depending only on sampling phase, so the receiver
+	#can be handed a sequence the controller never commanded.
+	#
+	#A period-N sampler takes exactly one sample in any N consecutive ticks, so a
+	#dwell of 2 (one redstone tick) is enough to guarantee delivery at any phase.
+	#Larger is strictly safer, never worse - the ballast tank needs about ten
+	#seconds for a full swing, so even 10 Hz is ~100x the bandwidth it can use.
+	#
+	#Dumps and alarm edges bypass this and publish immediately.
+	# Default: 2
+	# Range: 1 ~ 40
+	dwellTicks = 2
+
+[dive]
+	#Quick dive: descent speed held during transit, blocks per second.
+	#
+	#Full ballast is worth about 4 b/s on the simulated boat, so 3 leaves real
+	#authority in hand for the trim phase. Set this at the pump's limit and the
+	#boat arrives pinned at the stop with nothing left to brake with.
+	# Default: 3.0
+	# Range: 0.1 ~ 20.0
+	rate = 3.0
+	#Quick dive: deceleration the ballast can actually produce, b/s^2.
+	#Used to place the handover from rate control back to the depth loop.
+	#Too optimistic a number here means braking too late.
+	# Default: 0.4
+	# Range: 0.01 ~ 20.0
+	decel = 0.4
+	#Quick dive: command levels per block-per-second of rate error.
+	#At 6, a standstill start pins the valve open on its own - 'full open' falls
+	#out of the maths rather than being a special case beside it.
+	# Default: 6.0
+	# Range: 0.1 ~ 100.0
+	rateGain = 6.0
+	#Quick dive: dives shorter than this are left to the depth loop entirely.
+	#A transit phase over 10 blocks is all handover and no transit.
+	# Default: 25.0
+	# Range: 1.0 ~ 500.0
+	minDistance = 25.0
+	#Quick dive: blocks of slack added to the handover point.
+	#Braking early costs a couple of seconds. Braking late costs the boat.
+	# Default: 4.0
+	# Range: 0.0 ~ 100.0
+	margin = 4.0
+
+[alert]
+	#Half-period, in ticks, of the alarm on the TOP face.
+	#
+	#A note block plays on the RISING EDGE of its power, so a steady signal sounds
+	#once when the emergency starts and then leaves the crew in silence while the
+	#boat is still in trouble. Pulsing re-triggers it. 10 ticks gives one note per
+	#second; 0 makes the face steady for anyone wiring their own timing.
+	# Default: 10
+	# Range: 0 ~ 200
+	pulseTicks = 10
+	#Sound the alarm at WARNING as well as CRITICAL.
+	#Off by default: a warning that fires every time you approach your working
+	#depth stops being information and starts being noise.
+	onWarning = false
+
+[physics]
+	#Vertical speed, b/s, beyond which a physics reading is not believed.
+	#
+	#Sable drives an entity through chunk loads, collisions and teleports, and will
+	#occasionally report a velocity the boat did not have. With Kd 8 a single bogus
+	#-2 b/s commands a full blow, and the tank INTEGRATES that, so a few spurious
+	#ticks empty real water and the boat genuinely starts climbing. Reported as
+	#'the derivative randomly clips and sends me skyrocketing to the surface'.
+	#
+	#Set generously wide. This is a glitch filter, not a governor.
+	# Default: 20.0
+	# Range: 1.0 ~ 1000.0
+	maxSpeed = 20.0
+	#Vertical acceleration, b/s^2, beyond which a change in velocity is refused.
+	#
+	#Measured ballast authority is about 0.13 b/s^2, so 8 is sixty times anything
+	#the boat can do under its own power and will not touch real manoeuvring.
+	#Rejected readings are counted and shown on the panel: a climbing count means
+	#the physics is misbehaving, not the controller.
+	# Default: 8.0
+	# Range: 0.1 ~ 1000.0
+	maxAccel = 8.0
