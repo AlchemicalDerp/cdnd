@@ -1,12 +1,12 @@
 name = "CD&D"
 author = "TheSkyDude"
-version = "1.0.0"
+version = "1.1.0"
 pack-format = "packwiz:1.1.0"
 
 [index]
 file = "index.toml"
 hash-format = "sha256"
-hash = "8e0fdb2af0b1c1e8ae6b2217ae26fc73a43e7bf8ca11e8f7f2403c6af7700583"
+hash = "8d1ef9ebbf98cb9ba2063754b409410b31a82ec2e163d77ebe8e3bb1ad5e2d43"
 
 [versions]
 minecraft = "1.21.1"

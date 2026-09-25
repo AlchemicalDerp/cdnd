@@ -1,7 +1,7 @@
 <!-- packwright:readme -->
 # CD&D
 
-**Version:** 1.0.0 · **Minecraft:** 1.21.1 · **Loader:** NeoForge 21.1.251
+**Version:** 1.1.0 · **Minecraft:** 1.21.1 · **Loader:** NeoForge 21.1.251
 
 ## Install (Prism Launcher)
 
@@ -25,7 +25,7 @@ https://github.com/AlchemicalDerp/cdnd/releases/latest/download/cd-d-server.zip
 
 It contains no mods — [unsup](https://git.sleeping.town/exa/unsup) installs the server-side mods and configs, and updates them every time the server starts.
 
-## Mods (149)
+## Mods (154)
 
 | Name | Side | Source |
 |---|---|---|
@@ -78,7 +78,9 @@ It contains no mods — [unsup](https://git.sleeping.town/exa/unsup) installs th
 | Create: Copycats+ | both | [modrinth](https://modrinth.com/project/UT2M39wf) |
 | Create: Crafts & Additions and Aeronautics Compat | both | [modrinth](https://modrinth.com/project/tum2vG0T) |
 | Create: Curios Backtank | both | [modrinth](https://modrinth.com/project/WuKy9y7l) |
+| Create: Deployer API | both | [modrinth](https://modrinth.com/project/OZhUIuou) |
 | Create: Design n' Decor | both | [modrinth](https://modrinth.com/project/x49wilh8) |
+| Create: Extra Gauges | both | [modrinth](https://modrinth.com/project/6YJgomwt) |
 | Create: Ironworks | both | [modrinth](https://modrinth.com/project/FZb6dmQf) |
 | Create: Linear Bearing | both | [modrinth](https://modrinth.com/project/ZTwCjE7O) |
 | CreativeCore | both | [modrinth](https://modrinth.com/project/OsZiaDHq) |
@@ -120,11 +122,14 @@ It contains no mods — [unsup](https://git.sleeping.town/exa/unsup) installs th
 | Kotlin for Forge | both | [modrinth](https://modrinth.com/project/ordsPcFz) |
 | LambDynamicLights - Dynamic Lights | client | [modrinth](https://modrinth.com/project/yBW8D80W) |
 | LDLib | both | [curseforge](https://www.curseforge.com/projects/626676) |
+| Leaves Be Gone | both | [modrinth](https://modrinth.com/project/AVq17PqV) |
 | Legendary Tooltips *(optional)* | client | [modrinth](https://modrinth.com/project/atHH8NyV) |
 | Lever drugster | both | [modrinth](https://modrinth.com/project/GQNtImhh) |
 | Linear Bearings Fix | both | [modrinth](https://modrinth.com/project/xLxyRluH) |
 | Lithium | both | [modrinth](https://modrinth.com/project/gvQqBUqZ) |
 | Lithostitched | both | [modrinth](https://modrinth.com/project/XaDC71GB) |
+| Log Begone | both | [modrinth](https://modrinth.com/project/9ON3zv6e) |
+| Macaw's Windows | both | [modrinth](https://modrinth.com/project/C7I0BCni) |
 | MezzConfig | both | [modrinth](https://modrinth.com/project/7tEfOcA7) |
 | ModernFix | both | [modrinth](https://modrinth.com/project/nmDcB62a) |
 | Moonlight Lib | both | [modrinth](https://modrinth.com/project/twkfQtEc) |
