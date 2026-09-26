@@ -15,10 +15,10 @@
 	#.
 	#.
 	#Allow the Mechanical Press to process entire stacks at a time.
-	bulkPressing = false
+	bulkPressing = true
 	#.
 	#Allow the Mechanical Saw to process entire stacks at a time.
-	bulkCutting = false
+	bulkCutting = true
 	#.
 	#Allow supported potions to be brewed by a Mechanical Mixer + Basin.
 	allowBrewingInMixer = true
@@ -68,12 +68,12 @@
 	#Maximum length in blocks of mechanical belts.
 	# Default: 20
 	# Range: > 5
-	maxBeltLength = 20
+	maxBeltLength = 32
 	#.
 	#Maximum length in blocks of chain conveyor connections.
 	# Default: 32
 	# Range: > 5
-	maxChainConveyorLength = 32
+	maxChainConveyorLength = 64
 	#.
 	#Maximum amount of connections each chain conveyor can have.
 	# Default: 4
@@ -118,7 +118,7 @@
 	#Max Distance in blocks a Weighted Ejector can throw
 	# Default: 32
 	# Range: > 0
-	maxEjectorDistance = 32
+	maxEjectorDistance = 48
 	#.
 	#Time in ticks until the next item launched by an ejector scans blocks for potential collisions
 	# Default: 120
@@ -172,7 +172,7 @@
 		#Maximum amount of extension poles behind a Mechanical Piston.
 		# Default: 64
 		# Range: > 1
-		maxPistonPoles = 64
+		maxPistonPoles = 128
 		#.
 		#Max length of rope available off a Rope Pulley.
 		# Default: 384
@@ -542,7 +542,7 @@
 	#Maximum length of track that can be placed as one batch or turn.
 	# Default: 32
 	# Range: 16 ~ 128
-	maxTrackPlacementLength = 32
+	maxTrackPlacementLength = 128
 	#.
 	#Maximum length of a Train Stations' assembly track.
 	# Default: 128

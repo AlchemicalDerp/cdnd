@@ -1,0 +1,12 @@
+[
+  {"version":1},
+  {"ingredient":{"id":"minecraft:breeze_rod"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"createdeco:gold_coin"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"createdeco:gold_coinstack"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"waystones:blank_scroll"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"aeronautics:aviators_goggles"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"grapplemod:long_fall_boots"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"grapplemod:long_fall_boots_smithing_template"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"grapplemod:ender_staff"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"minecraft:spruce_door"},"type":"item_stack","bookmarkType":"INGREDIENT"}
+]

@@ -1,7 +1,7 @@
 <!-- packwright:readme -->
 # CD&D
 
-**Version:** 1.1.0 · **Minecraft:** 1.21.1 · **Loader:** NeoForge 21.1.251
+**Version:** 1.1.1 · **Minecraft:** 1.21.1 · **Loader:** NeoForge 21.1.251
 
 ## Install (Prism Launcher)
 
@@ -44,6 +44,7 @@ It contains no mods — [unsup](https://git.sleeping.town/exa/unsup) installs th
 | Balm | both | [modrinth](https://modrinth.com/project/MBAkmtvl) |
 | Better Combat | both | [modrinth](https://modrinth.com/project/5sy6g3kz) |
 | CBC Ballistics: NeoForge Port | both | [curseforge](https://www.curseforge.com/projects/1523915) |
+| CBC Enchanced Shells [Create Big Cannons] | both | [curseforge](https://www.curseforge.com/projects/1489732) |
 | Chipped | both | [modrinth](https://modrinth.com/project/BAscRYKm) |
 | Cloth Config API | both | [modrinth](https://modrinth.com/project/9s6osm5g) |
 | Clumps | both | [modrinth](https://modrinth.com/project/Wnxd13zP) |
@@ -54,14 +55,15 @@ It contains no mods — [unsup](https://git.sleeping.town/exa/unsup) installs th
 | Controlling | client | [modrinth](https://modrinth.com/project/xv94TkTM) |
 | CoroUtil | both | [modrinth](https://modrinth.com/project/rLLJ1OZM) |
 | Crash Assistant | client | [modrinth](https://modrinth.com/project/ix1qq8Ux) |
-| Create | both | [modrinth](https://modrinth.com/project/LNytGWDc) |
+| Create | both | [curseforge](https://www.curseforge.com/projects/328085) |
 | Create Aeronautics | both | [modrinth](https://modrinth.com/project/oWaK0Q19) |
+| Create Aeronautics Lift Patch | both | [modrinth](https://modrinth.com/project/wEWnF0xx) |
 | Create Aeronautics: AaA's Compact Gearshift | both | [modrinth](https://modrinth.com/project/JT1f6rr9) |
 | Create Aeronautics: Boat Propellers | both | [modrinth](https://modrinth.com/project/Rzsvsn8U) |
 | Create Aeronautics: Gadgets & Gizmos | both | [modrinth](https://modrinth.com/project/Sza3GgEL) |
 | Create Aeronautics: Toolgun | both | [modrinth](https://modrinth.com/project/5fUBLqeW) |
 | Create Aeronautics: Transmission & Linkage | both | [modrinth](https://modrinth.com/project/Y1dq5ioE) |
-| Create Big Cannons | both | [modrinth](https://modrinth.com/project/GWp4jCJj) |
+| Create Big Cannons | both | [curseforge](https://www.curseforge.com/projects/646668) |
 | Create Cardan Shafts | both | [modrinth](https://modrinth.com/project/5zf6e26A) |
 | Create Crafts & Additions | both | [modrinth](https://modrinth.com/project/kU1G12Nn) |
 | Create Deco | both | [modrinth](https://modrinth.com/project/sMvUb4Rb) |
@@ -107,6 +109,7 @@ It contains no mods — [unsup](https://git.sleeping.town/exa/unsup) installs th
 | FTB Library (NeoForge) | both | [curseforge](https://www.curseforge.com/projects/404465) |
 | FTB Ultimine (NeoForge) | both | [curseforge](https://www.curseforge.com/projects/386134) |
 | Fzzy Config | both | [modrinth](https://modrinth.com/project/hYykXjDp) |
+| GeckoLib | both | [curseforge](https://www.curseforge.com/projects/388172) |
 | GlitchCore | both | [modrinth](https://modrinth.com/project/s3dmwKy5) |
 | Grappling Hook Mod: Skybound | both | [modrinth](https://modrinth.com/project/tHHGzOFQ) |
 | GraveStone Mod | both | [modrinth](https://modrinth.com/project/RYtXKJPr) |
@@ -145,12 +148,14 @@ It contains no mods — [unsup](https://git.sleeping.town/exa/unsup) installs th
 | Puzzles Lib | both | [modrinth](https://modrinth.com/project/QAGBst4M) |
 | qModeling | both | [curseforge](https://www.curseforge.com/projects/1477453) |
 | Resourceful Lib | both | [modrinth](https://modrinth.com/project/G1hIVOrD) |
+| Ritchie's Projectile Library | both | [curseforge](https://www.curseforge.com/projects/1279407) |
 | Ritchie's Projectile Library | both | [modrinth](https://modrinth.com/project/B3pb093D) |
 | River Redux | both | [modrinth](https://modrinth.com/project/dhhdnacC) |
-| Sable | both | [curseforge](https://www.curseforge.com/projects/1312371) |
+| Sable | both | [modrinth](https://modrinth.com/project/T9PomCSv) |
 | Sable Photomancy | both | [curseforge](https://www.curseforge.com/projects/1526951) |
 | Sable: Far and Wide (Create Aeronautics) | both | [modrinth](https://modrinth.com/project/YbNLIWOy) |
 | Sable: Water Pressure | both | [modrinth](https://modrinth.com/project/Da7zRnYm) |
+| SableHeads | both | url |
 | SablePanel | both | [curseforge](https://www.curseforge.com/projects/1673366) |
 | Seamless Sleep | both | [modrinth](https://modrinth.com/project/IyHq05yB) |
 | Searchables | client | [modrinth](https://modrinth.com/project/fuuu3xnx) |
@@ -175,12 +180,7 @@ It contains no mods — [unsup](https://git.sleeping.town/exa/unsup) installs th
 | Vanilla Backport | both | [modrinth](https://modrinth.com/project/6xwxDTgf) |
 | Villager Names | both | [modrinth](https://modrinth.com/project/gqRXDo8B) |
 | Wavey Capes | client | [modrinth](https://modrinth.com/project/kYuIpRLv) |
-| Waystone Contraption Compat | both | [modrinth](https://modrinth.com/project/nFsh988g) |
-| Waystones | both | [modrinth](https://modrinth.com/project/LOpKHB2A) |
-| Waystones Teleport Pets | both | [modrinth](https://modrinth.com/project/VaCl9OtG) |
-| Waystones: Sable (Create Aeronautics Addon) | both | [modrinth](https://modrinth.com/project/BxhPGfcK) |
 | Xaero's Minimap | both | [modrinth](https://modrinth.com/project/1bokaNcj) |
-| Xaero's Minimap & World Map - Waystones Compatibility | both | [modrinth](https://modrinth.com/project/7mLhyqIY) |
 | Xaero's World Map | both | [modrinth](https://modrinth.com/project/NcUtCpym) |
 | YetAnotherConfigLib (YACL) | both | [modrinth](https://modrinth.com/project/1eAoo2KR) |
 
