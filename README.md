@@ -1,7 +1,7 @@
 <!-- packwright:readme -->
 # CD&D
 
-**Version:** 1.1.1 · **Minecraft:** 1.21.1 · **Loader:** NeoForge 21.1.251
+**Version:** 1.1.2 · **Minecraft:** 1.21.1 · **Loader:** NeoForge 21.1.251
 
 ## Install (Prism Launcher)
 
@@ -25,7 +25,7 @@ https://github.com/AlchemicalDerp/cdnd/releases/latest/download/cd-d-server.zip
 
 It contains no mods — [unsup](https://git.sleeping.town/exa/unsup) installs the server-side mods and configs, and updates them every time the server starts.
 
-## Mods (154)
+## Mods (155)
 
 | Name | Side | Source |
 |---|---|---|
@@ -40,6 +40,7 @@ It contains no mods — [unsup](https://git.sleeping.town/exa/unsup) installs th
 | Architectury API | both | [modrinth](https://modrinth.com/project/lhGA9TYQ) |
 | Athena | client | [modrinth](https://modrinth.com/project/b1ZV3DIJ) |
 | Atmosfera Neo | both | [curseforge](https://www.curseforge.com/projects/1499605) |
+| Automata | both | url |
 | Azimuth API | both | [modrinth](https://modrinth.com/project/RpH8tmT1) |
 | Balm | both | [modrinth](https://modrinth.com/project/MBAkmtvl) |
 | Better Combat | both | [modrinth](https://modrinth.com/project/5sy6g3kz) |

@@ -1084,6 +1084,11 @@ hash = "c40aa6bde1a5a8ced6b6e57a87e35e590b4460b9edc56652a940dfd2bdbf0358"
 metafile = true
 
 [[files]]
+file = "mods/automata.pw.toml"
+hash = "5ba592126d021e7805774653067ed96b5a4da15317bb8f307b8de4fa1db1bdee"
+metafile = true
+
+[[files]]
 file = "mods/azimuth-api.pw.toml"
 hash = "3f829f54e19ebb32f23f554e05bd49c005dfc057933e07d0df4f85e7085d314d"
 metafile = true
@@ -1165,7 +1170,7 @@ metafile = true
 
 [[files]]
 file = "mods/create-aeronautics-aaas-compact-gearshift.pw.toml"
-hash = "4332954ce6c6b79b9851e823fdf3412f3c2c7d71f671962b45fffe4204eb651d"
+hash = "164ee3dca597084c84d9ef83164a6be544307e1663892215cf7f6dd0f3b50538"
 metafile = true
 
 [[files]]
@@ -1175,7 +1180,7 @@ metafile = true
 
 [[files]]
 file = "mods/create-aeronautics-gadgets-and-gizmos.pw.toml"
-hash = "b7588dc03af736ac133e98b830298224c0aaed4d0cc1aa54b83c0027467ecb9d"
+hash = "413c42a99861b98f8db2bbac9333397b21a0aff515bbf0347f5800011975faa5"
 metafile = true
 
 [[files]]
@@ -1555,7 +1560,7 @@ metafile = true
 
 [[files]]
 file = "mods/mezzconfig.pw.toml"
-hash = "efad386063cb79013d7522fcc5b5879c5c3cd556e83bd41a56980632827b45b2"
+hash = "1a0a919e4815e3869846483c937ecb395d0700fa10a1d1feae790508853773d8"
 metafile = true
 
 [[files]]
@@ -1565,7 +1570,7 @@ metafile = true
 
 [[files]]
 file = "mods/moonlight.pw.toml"
-hash = "bdb50204369d9b6d8b5dbd7659795e443be6508448bf937e4f866c037842d09f"
+hash = "dda27add4d2cfc241d52a6825e016712d704c0b9925ab2ccbf779e8493f752ed"
 metafile = true
 
 [[files]]
@@ -1700,12 +1705,12 @@ metafile = true
 
 [[files]]
 file = "mods/sophisticated-backpacks.pw.toml"
-hash = "d089be7d1b39541c418ea6a6a4d3797eb5afcc68ad511dbd606de66d5397d59d"
+hash = "bcdd9de050d7efbc77ffc3ce177905bf099301e3fd48993606402fc70537bc18"
 metafile = true
 
 [[files]]
 file = "mods/sophisticated-core.pw.toml"
-hash = "2f0c858e1e303aba06718a27c1628134418d53825bd46e3c44cabe1b442636c7"
+hash = "5d4e493a74a7deb175d278274e6990f92d1a3910fae5d4866a1520bbca9acce2"
 metafile = true
 
 [[files]]
@@ -1755,7 +1760,7 @@ metafile = true
 
 [[files]]
 file = "mods/terralith.pw.toml"
-hash = "da7ee99189ad35aac094919fe33cac647d98533b23c228f10d4811f08989e2b8"
+hash = "81c5c05f9ed4c07b9f027ff6c421939bb04e476075091f135d34aaa05af1f950"
 metafile = true
 
 [[files]]

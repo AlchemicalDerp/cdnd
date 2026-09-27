@@ -1,0 +1,9 @@
+name = "Automata"
+filename = "automata-0.1.0.jar"
+side = "both"
+pin = true
+
+[download]
+url = "https://stash.theskyhub.xyz/f/BDp4qty/automata-0.1.0.jar"
+hash-format = "sha256"
+hash = "019dab29edd8801cb1c966cf33a2f58c35710ba3c6418bd2adc392beb8bfbf90"
