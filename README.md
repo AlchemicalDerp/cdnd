@@ -1,7 +1,7 @@
 <!-- packwright:readme -->
 # CD&D
 
-**Version:** 1.1.2 · **Minecraft:** 1.21.1 · **Loader:** NeoForge 21.1.251
+**Version:** 1.1.3 · **Minecraft:** 1.21.1 · **Loader:** NeoForge 21.1.251
 
 ## Install (Prism Launcher)
 

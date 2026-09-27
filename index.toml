@@ -1085,7 +1085,7 @@ metafile = true
 
 [[files]]
 file = "mods/automata.pw.toml"
-hash = "5ba592126d021e7805774653067ed96b5a4da15317bb8f307b8de4fa1db1bdee"
+hash = "f721cdbf6e0acc2831d5372f427481ce88d8a1b4318bfa61d48bed698c9779a4"
 metafile = true
 
 [[files]]
