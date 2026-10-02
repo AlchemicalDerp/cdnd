@@ -1,0 +1,13 @@
+name = "AeroWeather"
+filename = "aeroweather-1.5.2.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/oFN6RGHX/versions/kADN7hR4/aeroweather-1.5.2.jar"
+hash-format = "sha512"
+hash = "55d188799c8e9ec77f8e84ce0e4ecb762796fbc46324a8720bc288e7d5a9a51ea8e1378370d41c88ebdd8720d7a5d166a8340c2886bf013f48a1bd27e81738a0"
+
+[update]
+[update.modrinth]
+mod-id = "oFN6RGHX"
+version = "kADN7hR4"

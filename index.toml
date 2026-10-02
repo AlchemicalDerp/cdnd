@@ -1049,6 +1049,16 @@ hash = "980a23bd1d06f53cf9c912293cf0a9233c06c729d586c4e38fab26b6f4c125b7"
 metafile = true
 
 [[files]]
+file = "mods/aerowear.pw.toml"
+hash = "a0b366eb0b182b4017ff3f7e99fe23012fad12b48986e79ce7a105275e29593e"
+metafile = true
+
+[[files]]
+file = "mods/aeroweather.pw.toml"
+hash = "54a500755f9262ebb92523f3c666a0e296f361a12e6ce4f5c4717c3cab586042"
+metafile = true
+
+[[files]]
 file = "mods/aileron.pw.toml"
 hash = "a86b49f3eebe85445b5e7c8f9a7ef1e8cb84fa84939fe1f2b933dfb5feb92926"
 metafile = true
@@ -1295,17 +1305,17 @@ metafile = true
 
 [[files]]
 file = "mods/create.pw.toml"
-hash = "4b0ca63279620ec9ba4c63820a9d4f9ceea9b717227137ea19e5c420c820f858"
+hash = "dcaf5f2e28db0b9a127d0167456832341045ddc9aec058c3d9fcf53f618d2404"
 metafile = true
 
 [[files]]
 file = "mods/createaddition.pw.toml"
-hash = "bcbcb4d32d5b2b6bcb4a578639a8830396eb87febe0ff3364a99ca6aee9a5bb7"
+hash = "e5052e0fcba9af1e3c6c0734829b441bc5a23012108bf203ca01825ca12ff6b1"
 metafile = true
 
 [[files]]
 file = "mods/creativecore.pw.toml"
-hash = "95ad690c28da310450f8b32878a9ca1a0d997a072b6da3f22153b21688d9069a"
+hash = "ee9b77a6a70722fcb5b35846fd9acadf5e649c5341102c3244eb0a8847d1f0ca"
 metafile = true
 
 [[files]]
@@ -1365,7 +1375,7 @@ metafile = true
 
 [[files]]
 file = "mods/distanthorizons.pw.toml"
-hash = "6d3e312dbf8db12dd1b6fb3bd1d29f210ab48024a0b2ebdf02fd32c265955c5d"
+hash = "0c20fea3407ed0db85b4b171f1820a24987f2659946fadd30bae044205041b09"
 metafile = true
 
 [[files]]
@@ -1420,7 +1430,7 @@ metafile = true
 
 [[files]]
 file = "mods/ftb-library-forge.pw.toml"
-hash = "2e72d40c6d7b128981b19b71c19d45eb6813f1af87ae1abe1cf92adfa5e8223f"
+hash = "19d86081a1c7654a91f437d85ea34af4e3f2b899c8e0e50d48a04ca97babf7b4"
 metafile = true
 
 [[files]]
@@ -1469,6 +1479,11 @@ hash = "199cfc53716e9b5cfb33fcd550dff7fcf2e1163dceaf736ab9a5b42f4c2836be"
 metafile = true
 
 [[files]]
+file = "mods/interiors.pw.toml"
+hash = "e7e6b3effe3022cf1fdb900c857111fdcbfd6b385c2d5bd28c914efaed436ecb"
+metafile = true
+
+[[files]]
 file = "mods/iris.pw.toml"
 hash = "db1c1e6382878b78e994dba1b9026935f8d1c5ca685c89d2437858e0a0dcab58"
 metafile = true
@@ -1495,7 +1510,12 @@ metafile = true
 
 [[files]]
 file = "mods/jei.pw.toml"
-hash = "fb3233553d7a88373fcd54e6fbeac1f593fdfbe44f00e0c24790a01774545e2f"
+hash = "c911d03476ac0e535c3c601ad98a725ce685e063032474abbf2a2fb9bf23f786"
+metafile = true
+
+[[files]]
+file = "mods/jeioptimizer.pw.toml"
+hash = "df85c6775ba7fa2903e2357f85c55ef44548467979c963606359a10248499323"
 metafile = true
 
 [[files]]
@@ -1560,7 +1580,7 @@ metafile = true
 
 [[files]]
 file = "mods/mezzconfig.pw.toml"
-hash = "1a0a919e4815e3869846483c937ecb395d0700fa10a1d1feae790508853773d8"
+hash = "12c6e23ca90b3dc4df9f51c445d944e7cd298186dec5aeff65b66e54343f3272"
 metafile = true
 
 [[files]]
@@ -1614,13 +1634,18 @@ hash = "d935e4ce118d15c88b10809df85e801f0e9577855f870f3c28e5a0bd5e7fecf6"
 metafile = true
 
 [[files]]
+file = "mods/power-grid.pw.toml"
+hash = "22cf5579fbc67af2ac84358af3c390c6235fabd6cd6cc3828021349b588f4bdb"
+metafile = true
+
+[[files]]
 file = "mods/prism-lib.pw.toml"
 hash = "d9b38ba42434eb436d036b1c8add839bee003240dc85cc54ec626aac58c59070"
 metafile = true
 
 [[files]]
 file = "mods/puzzles-lib.pw.toml"
-hash = "391e5d415c0754ad210b8efa54fc9ded4f99e6ab8562d6faf960f3b65d84a66a"
+hash = "6b1ee632cee2d75301016eaac99a3446ad605f11fbfda631effac0eb7da59f6c"
 metafile = true
 
 [[files]]
@@ -1705,12 +1730,17 @@ metafile = true
 
 [[files]]
 file = "mods/sophisticated-backpacks.pw.toml"
-hash = "bcdd9de050d7efbc77ffc3ce177905bf099301e3fd48993606402fc70537bc18"
+hash = "d35f6e0d09bb9d89ccd5c4ed18f52a24e450ef8c7220c4a10a169e7c1d12b23f"
 metafile = true
 
 [[files]]
 file = "mods/sophisticated-core.pw.toml"
 hash = "5d4e493a74a7deb175d278274e6990f92d1a3910fae5d4866a1520bbca9acce2"
+metafile = true
+
+[[files]]
+file = "mods/sophisticated-jei-index.pw.toml"
+hash = "973748a45915979c631640ebd390c323ae0c94db3c5a1457b018875de2ee119d"
 metafile = true
 
 [[files]]
@@ -1760,12 +1790,17 @@ metafile = true
 
 [[files]]
 file = "mods/terralith.pw.toml"
-hash = "81c5c05f9ed4c07b9f027ff6c421939bb04e476075091f135d34aaa05af1f950"
+hash = "7a94d48dc640239a65b9cb089d8a188308c5a418ac644de60c9437b5c93ca4a9"
 metafile = true
 
 [[files]]
 file = "mods/toms-storage.pw.toml"
 hash = "a303683e4c74640f419c31db329e9afc3ee8f388abc5c6a536dc6169c274b5c6"
+metafile = true
+
+[[files]]
+file = "mods/too-fast.pw.toml"
+hash = "49fb27f04c4ec26614fd121a7a8f7764d59949d0b6a3c32a63fb57fd2b3c8ea9"
 metafile = true
 
 [[files]]
@@ -1780,7 +1815,7 @@ metafile = true
 
 [[files]]
 file = "mods/villager-names-serilum.pw.toml"
-hash = "d3c61cce4433ee1e1d53679cad5e6d89dd877d1313ed206288273495bbb3ab79"
+hash = "3bb2ed04b992ca9ec12b08248e04d3360c45fe63d22ee7b2607412d17b7dbb5d"
 metafile = true
 
 [[files]]

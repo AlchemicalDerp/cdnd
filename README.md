@@ -1,7 +1,7 @@
 <!-- packwright:readme -->
 # CD&D
 
-**Version:** 1.1.3 · **Minecraft:** 1.21.1 · **Loader:** NeoForge 21.1.251
+**Version:** 1.1.4 · **Minecraft:** 1.21.1 · **Loader:** NeoForge 21.1.251
 
 ## Install (Prism Launcher)
 
@@ -25,7 +25,7 @@ https://github.com/AlchemicalDerp/cdnd/releases/latest/download/cd-d-server.zip
 
 It contains no mods — [unsup](https://git.sleeping.town/exa/unsup) installs the server-side mods and configs, and updates them every time the server starts.
 
-## Mods (155)
+## Mods (162)
 
 | Name | Side | Source |
 |---|---|---|
@@ -33,6 +33,8 @@ It contains no mods — [unsup](https://git.sleeping.town/exa/unsup) installs th
 | Acedium Sodiumized *(optional)* | client | [modrinth](https://modrinth.com/project/sBwZemk4) |
 | Advancement Plaques *(optional)* | client | [modrinth](https://modrinth.com/project/9NM0dXub) |
 | Aeronautics Wind Sound | client | [modrinth](https://modrinth.com/project/XU9MYvTx) |
+| AeroWear | both | [modrinth](https://modrinth.com/project/dCCUTVG5) |
+| AeroWeather | both | [modrinth](https://modrinth.com/project/oFN6RGHX) |
 | Aileron | both | [modrinth](https://modrinth.com/project/b8kG1VGq) |
 | Amendments | both | [modrinth](https://modrinth.com/project/6iTJugQR) |
 | Another Furniture | both | [modrinth](https://modrinth.com/project/ulloLmqG) |
@@ -56,7 +58,7 @@ It contains no mods — [unsup](https://git.sleeping.town/exa/unsup) installs th
 | Controlling | client | [modrinth](https://modrinth.com/project/xv94TkTM) |
 | CoroUtil | both | [modrinth](https://modrinth.com/project/rLLJ1OZM) |
 | Crash Assistant | client | [modrinth](https://modrinth.com/project/ix1qq8Ux) |
-| Create | both | [curseforge](https://www.curseforge.com/projects/328085) |
+| Create | both | [modrinth](https://modrinth.com/project/LNytGWDc) |
 | Create Aeronautics | both | [modrinth](https://modrinth.com/project/oWaK0Q19) |
 | Create Aeronautics Lift Patch | both | [modrinth](https://modrinth.com/project/wEWnF0xx) |
 | Create Aeronautics: AaA's Compact Gearshift | both | [modrinth](https://modrinth.com/project/JT1f6rr9) |
@@ -84,8 +86,10 @@ It contains no mods — [unsup](https://git.sleeping.town/exa/unsup) installs th
 | Create: Deployer API | both | [modrinth](https://modrinth.com/project/OZhUIuou) |
 | Create: Design n' Decor | both | [modrinth](https://modrinth.com/project/x49wilh8) |
 | Create: Extra Gauges | both | [modrinth](https://modrinth.com/project/6YJgomwt) |
+| Create: Interiors | both | [modrinth](https://modrinth.com/project/r4Knci2k) |
 | Create: Ironworks | both | [modrinth](https://modrinth.com/project/FZb6dmQf) |
 | Create: Linear Bearing | both | [modrinth](https://modrinth.com/project/ZTwCjE7O) |
+| Create: Power Grid | both | [modrinth](https://modrinth.com/project/eWiBLJ9R) |
 | CreativeCore | both | [modrinth](https://modrinth.com/project/OsZiaDHq) |
 | Cristel Lib | both | [modrinth](https://modrinth.com/project/cl223EMc) |
 | Cubes Without Borders *(optional)* | client | [modrinth](https://modrinth.com/project/ETlrkaYF) |
@@ -122,6 +126,7 @@ It contains no mods — [unsup](https://git.sleeping.town/exa/unsup) installs th
 | Jade Addons (Neo/Forge) | both | [modrinth](https://modrinth.com/project/xuDOzCLy) |
 | Jade Sable Compat | client | [modrinth](https://modrinth.com/project/jCrJ4iGH) |
 | Jade 🔍 | both | [modrinth](https://modrinth.com/project/nvQzSEkH) |
+| JEIOptimizer | client | [modrinth](https://modrinth.com/project/GRvMb5oF) |
 | Just Enough Items (JEI) | both | [modrinth](https://modrinth.com/project/u6dRKJwZ) |
 | Kotlin for Forge | both | [modrinth](https://modrinth.com/project/ordsPcFz) |
 | LambDynamicLights - Dynamic Lights | client | [modrinth](https://modrinth.com/project/yBW8D80W) |
@@ -165,6 +170,7 @@ It contains no mods — [unsup](https://git.sleeping.town/exa/unsup) installs th
 | Sodium | client | [modrinth](https://modrinth.com/project/AANobbMI) |
 | Sophisticated Backpacks | both | [modrinth](https://modrinth.com/project/TyCTlI4b) |
 | Sophisticated Core | both | [modrinth](https://modrinth.com/project/nmoqTijg) |
+| Sophisticated JEI Index | both | [modrinth](https://modrinth.com/project/u7Rbf90L) |
 | Sound Physics Remastered | both | [modrinth](https://modrinth.com/project/qyVF9oeo) |
 | Sparse Structures | both | [modrinth](https://modrinth.com/project/qwvI41y9) |
 | Spyglass Improvements | client | [modrinth](https://modrinth.com/project/Z6ykjRlM) |
@@ -177,6 +183,7 @@ It contains no mods — [unsup](https://git.sleeping.town/exa/unsup) installs th
 | Terralith | both | [modrinth](https://modrinth.com/project/8oi3bsk5) |
 | Terralith: ReStoned | both | [modrinth](https://modrinth.com/project/oTQsXi8U) |
 | Tom's Simple Storage Mod | both | [modrinth](https://modrinth.com/project/XZNI4Cpy) |
+| Too Fast | both | [modrinth](https://modrinth.com/project/w6JSkKSH) |
 | Towns and Towers | both | [modrinth](https://modrinth.com/project/DjLobEOy) |
 | Vanilla Backport | both | [modrinth](https://modrinth.com/project/6xwxDTgf) |
 | Villager Names | both | [modrinth](https://modrinth.com/project/gqRXDo8B) |
