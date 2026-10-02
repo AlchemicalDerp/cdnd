@@ -1145,7 +1145,7 @@ metafile = true
 
 [[files]]
 file = "mods/collective.pw.toml"
-hash = "5ca02772cc6951185af8eb07ded5c7310c80f71498c5c513b1a8d5bd126822a9"
+hash = "b3fb9dc1799ff001381ace1881668b9ecc4d6a0cfde404f9a56d60f5f9578087"
 metafile = true
 
 [[files]]
@@ -1270,7 +1270,7 @@ metafile = true
 
 [[files]]
 file = "mods/create-deep-seas.pw.toml"
-hash = "404db1758af44123b89cbf6e2ffdf4a5cf11b708be665f48657ff40735723152"
+hash = "a9982b748051b8e6a50646beae1f1cd2df07962a3525663aae7cde0d07c562e2"
 metafile = true
 
 [[files]]
@@ -1730,12 +1730,12 @@ metafile = true
 
 [[files]]
 file = "mods/sophisticated-backpacks.pw.toml"
-hash = "d35f6e0d09bb9d89ccd5c4ed18f52a24e450ef8c7220c4a10a169e7c1d12b23f"
+hash = "c0f73c72c3903c3302a2589ba75fd4e1f4c1b3e2b1fe478340b2c826b55e5cd4"
 metafile = true
 
 [[files]]
 file = "mods/sophisticated-core.pw.toml"
-hash = "5d4e493a74a7deb175d278274e6990f92d1a3910fae5d4866a1520bbca9acce2"
+hash = "e824f362b3537caa9dc64e54021f80b0f9f7a8eac36603fd8a3e53f3c7264670"
 metafile = true
 
 [[files]]
